@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Mulish:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,700;1,800&family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+   
+font-family: 'Mulish', sans-serif;
+}
+.primary-text{
+    color: #FFF;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
+}
+.btn-primary{
+    border-radius: 8px;
+background: #FF5400;
+color: white;
+}
+/* 
+navbar */
+
+header{
+    margin: 60px 95px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.bar{
+    visibility: hidden;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+.bar{
+    visibility: hidden;
+}
+/* <!-- banner section --> */
+.banner{
+    /* background-image: url('./Images/Group\ 13\ \(1\)\ \(1\).png'); */
+    text-align: center;
+    padding:80px 1px 106px 1px;
+    border-radius: 7px;
+    background-size: cover;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),url('./Images/Group\ 13\ \(1\)\ \(1\).png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-head{
+    color: #FFF;
+font-size: 64px;
+font-style: normal;
+}
+.banner-input{
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+display: inline-flex;
+padding: 16px;
+align-items: flex-start;
+gap: 24px;
+
+
+}
+.white-button{
+    border-radius: 8px;
+background: #FFF;
+color: rgba(19, 19, 24, 0.50);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.banner-input button{
+    width: 174px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+     .banner-input{
+        flex-direction: column;
+    }
+    header{
+        margin: 20px;
+    }
+    .non {
+        display: none;
+      }
+    .bar{
+        visibility: visible;
+    }
+
+    .banner .banner-head{
+        font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+    }
+    .banner{
+        padding: 20px;
+        text-align: center;
+        background-size: cover;
+        /* background-image: url('./Images/Group\ 13\ \(1\)\ \(1\).png'); */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url('./Images/Group\ 13\ \(1\)\ \(1\).png'); 
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .banner-input{
+        width: 100%;
+    }
+    .banner-input button{
+        width: 95%;
+        /* margin-right:calc(99%-125px); */
+    }
+   
+}
