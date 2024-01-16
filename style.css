@@ -339,8 +339,37 @@ left: 40%;
 transform: translate(-50%, -50%);
 transform: rotate(-30deg);
 }
+/* footer */
 
+.footer{
+    text-align: center;
+    background: rgba(35, 35, 54, 0.05);
+}
+.text-footer {
+    margin-left:15%;
+    width: 70%;
+  text-align: center;
+}
+.footer-head{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.footer-icon ul{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.last-footer{
+    margin-left:15%;
+    width: 70%;
+  text-align: center;
+}
 
 
 
