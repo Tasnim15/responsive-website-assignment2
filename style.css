@@ -251,6 +251,7 @@ line-height: normal;
 .two-services-div{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     
 }
 .hotel-service{
@@ -280,7 +281,56 @@ padding:10px;
 margin-top:5% ;
 margin-bottom: 4%;
 }
+/* <!-- a simple perfect place to get lost --> */
+.perfect-place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+  
+}
 
+/* newsletter-section */
+.newsletter-section{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+   
+    
+}
+.newsletter-text{
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding-left: 2%;
+    width: 50%;
+    
+}
+.newsletter-text>input{
+    width: 90%;
+  margin-bottom: 20px;
+}
+.newsletter-pic img{
+    width: 90%;
+}
+.newsletter-pic{
+    position: relative;
+}
+.rotate{
+    border-radius: 16px;
+background: #FF5400;
+    width: 250px;
+height: 60px;
+text-align: center;
+
+padding-bottom: 20px;
+position: absolute;
+top: 55%;
+left: 55%;
+transform: translate(-50%, -50%);
+transform: rotate(-30deg);
+}
 
 
 
@@ -288,7 +338,7 @@ margin-bottom: 4%;
 
 
 @media screen and (max-width:600px) {
-     .banner-input, .popular-tours-section, .two-services-div {
+     .banner-input, .popular-tours-section, .two-services-div, .perfect-place, .newsletter-section {
         flex-direction: column;
     }
     /* header */
@@ -375,4 +425,17 @@ font-weight: 600;
 .hotel-service,.world-class-service,.one-services-div{
     width: auto;
     margin: 10px 0px 10px 0px;
+}
+/* .newsletter-section */
+.newsletter-text{
+    width: auto;
+}
+.newsletter-pic img{
+  width: 100%;
+  margin-top: 10px;
+}
+.rotate{
+    width: 250px;
+    height: 60px;
+    transform: rotate(-30deg);
 }
