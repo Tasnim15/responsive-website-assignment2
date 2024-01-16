@@ -59,9 +59,11 @@ font-style: normal;
 .banner-input{
     border-radius: 8px;
 background: rgba(255, 255, 255, 0.30);
-display: inline-flex;
-padding: 16px;
-align-items: flex-start;
+display: flex;
+margin: 16px;
+
+justify-content: space-around;
+align-items: center;
 gap: 24px;
 
 
@@ -115,6 +117,8 @@ font-weight: 600;
     }
     .banner-input{
         width: 100%;
+        margin: auto;
+    
     }
     .banner-input button{
         width: 95%;
