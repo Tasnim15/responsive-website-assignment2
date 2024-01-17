@@ -95,7 +95,7 @@ font-style: normal;
 background: rgba(255, 255, 255, 0.30);
 display: flex;
 margin: 16px;
-
+padding: 16px;
 justify-content: space-around;
 align-items: center;
 gap: 24px;
@@ -148,22 +148,21 @@ line-height: normal;
     margin-bottom: 20px;
   
 }
-.picture-box-1 img{
+/* .picture-box-1 img{
     width: 100%;
 }
 .picture-box-2 .img1{
-    width: 85%;
+   width: 100%;
 }
-/* .picture-box-2 .img2{
-  
-} */
+
 .picture-box-2 .img3{
     width: 100%;
 }
 
 .picture-box-3 img{
     width: 100%;
-}
+  
+} */
 
 .picture-box-2{
     display: grid;
@@ -341,9 +340,9 @@ transform: rotate(-30deg);
 }
 /* footer */
 
-.footer{
+footer{
     text-align: center;
-    background: rgba(35, 35, 54, 0.05);
+    background: rgba(19, 19, 24, 0.05);
 }
 .text-footer {
     margin-left:15%;
@@ -372,11 +371,57 @@ transform: rotate(-30deg);
 }
 
 
+/* bonus section */
+.feedback-section{
+text-align: center;
+border: 10px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05); 
+border-radius: 16px;
+margin: 20px;
+
+}
+.bonus{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05); 
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.bonus-description{
+border-right: 2px solid orangered;
+width: 95%;
+padding: 20px;
+text-align: start;
+}
+.feedback{
+    width: 96%;
+    padding: 20px;
+}
+.feedback img{
+    border-radius: 50%;
+    border: 2px solid orangered;
+}
+.arrow-btn{
+    border-radius: 16px;
+    border: 1px solid rgba(246, 41, 41, 0.2);
+    background: rgba(41, 206, 246, 0.05); 
+ margin-left: 99%;
+}
+
+
+
+
+
+
+
 
 
 
 @media screen and (max-width:600px) {
-     .banner-input, .popular-tours-section, .two-services-div, .perfect-place, .newsletter-section {
+     .banner-input, .popular-tours-section, .two-services-div, .perfect-place, .newsletter-section, .bonus {
         flex-direction: column;
     }
     /* header */
@@ -407,6 +452,8 @@ font-weight: 600;
     .banner-input{
         width: 100%;
         margin: auto;
+    margin-top: 16px;
+
     
     }
     .banner-input button{
@@ -486,8 +533,18 @@ font-weight: 600;
     width: 100%;
 }
 .rotate{
-    width: 340px;
+    width: 300px;
     height: 60px;
     transform: rotate(-30deg);
+}
+
+
+
+
+/* bonus description */
+.bonus-description{
+    border-right: 0px;
+    border-bottom: 2px solid orangered;
+    padding: 9px;
 }
 }
